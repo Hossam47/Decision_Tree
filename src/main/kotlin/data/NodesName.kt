@@ -6,7 +6,6 @@ enum class NodesName {
     HUMIDITY,
     WIND,
 }
-
 fun getNodeName(node: NodesName): String = when (node) {
     NodesName.OUTLOOK -> "Outlook"
     NodesName.TEMPERATURE -> "Temperature"

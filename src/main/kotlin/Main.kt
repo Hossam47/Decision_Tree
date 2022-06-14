@@ -18,8 +18,7 @@ fun main() {
     printEntropy(positive.size, negative.size)
 
     NodesName.values().forEach { nodeName ->
-
-        informationGain(DataSet.data, nodeName) {
+        printInformationGain(DataSet.data, nodeName) {
             Pair(
                 when (nodeName) {
                     NodesName.OUTLOOK -> it.outlook
